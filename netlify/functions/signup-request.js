@@ -28,62 +28,6 @@ exports.handler = async function (event, context) {
     };
   }
   console.log("function called from : " + event?.headers?.['client-ip']);
-  try {
-    const reqJson = JSON?.parse(event.body);
-    const eventType = reqJson?.eventType;
-    const requestId = reqJson?.request?.type;
-    const requestEventId = reqJson?.eventId;
-    //  if (eventType === REQUEST_CREATED_EVENT_TYPE && requestId === SIGN_UP_REQUEST) {
-    //   const eventJsonResponse = await fetchEventByEventId(requestEventId);
-    //   // const orgObject = await createOrganization(reqJson);
-    //   // const orgJsonObj = JSON.parse(await orgObject.text());
-    //   // return await updateRequest(orgJsonObj.developerId, eventJsonResponse.request);
-    // } else 
-    if (eventType === REQUEST_APPROVED_EVENT_TYPE && requestId === SIGN_UP_REQUEST) {
-      console.log('Appove Request Function Call :', eventType)
-      const eventJsonResponse = await fetchEventByEventId(requestEventId);
-      const responseEventId = eventJsonResponse.eventId;
-      const orgObject = await createOrganization(reqJson);
-      const orgJsonObj = JSON?.parse(await orgObject.text());
-      if (requestEventId === responseEventId) {
-        let customData = {
-          'first-name': reqJson.request.customData['first-name'],
-          'last-name': reqJson.request.customData['last-name'],
-          'business-email': reqJson.request.customData['business-email'],
-          'title': reqJson.request.customData['title'],
-          'country': reqJson.request.customData['country'],
-        }
-        const body = {
-          "email": reqJson.request.customData['business-email'],
-          "name": reqJson.request.customData['first-name'],
-          "customData": customData,
-          "developerId": orgJsonObj.developerId,
-          "roles": [DEVELOPER_DEFAULT_ROLES],
-          "developerInviteTemplateId": USER_INVITE_TEMPLATEID
-        }
-        return await createInvite(body);
-      }
-    }
-    //  if(eventType === REQUEST_REJECTED_EVENT_TYPE && requestId === SIGN_UP_REQUEST){
-    //   const eventJsonResponse = await fetchEventByEventId(requestEventId);
-    //   return await deleteOrganization(eventJsonResponse.request);
-    // }
-    return {
-      statusCode: 200,
-      contentType: 'application/json',
-      headers: { 'Content-Type': 'application/json; charset=utf-8' },
-      body: JSON.stringify({ "msg": "Generalize 200 response from function" }),
-    };
-  } catch (error) {
-    console.log(error, "At line number 63");
-    console.log(JSON.stringify(error));
-    return {
-      statusCode: 500,
-      contentType: 'application/json',
-      headers: { 'Content-Type': 'application/json; charset=utf-8' },
-      body: JSON.stringify({ "msg": error?.message }),
-    };
-  }
 }
 
 async function createInvite(inviteBody) {
