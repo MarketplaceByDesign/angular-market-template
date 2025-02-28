@@ -6,7 +6,7 @@ import {
     LoginResponse,
     NativeLoginService,
     SiteAuthConfig,
-} from '@openchannel/angular-common-services';
+} from '@mbd-common-libs/angular-common-services';
 import { ActivatedRoute, Router } from '@angular/router';
 import { filter, finalize, takeUntil, tap } from 'rxjs/operators';
 import { Subject } from 'rxjs';
@@ -14,7 +14,7 @@ import { OAuthService } from 'angular-oauth2-oidc';
 import { ToastrService } from 'ngx-toastr';
 import { LoadingBarState } from '@ngx-loading-bar/core/loading-bar.state';
 import { LoadingBarService } from '@ngx-loading-bar/core';
-import { ComponentsUserLoginModel } from '@openchannel/angular-common-components';
+import { ComponentsUserLoginModel } from '@mbd-common-libs/angular-common-components';
 import { CmsContentService } from '@core/services/cms-content-service/cms-content-service.service';
 
 @Component({

@@ -23,7 +23,7 @@ import {
     mockUserServiceProvider,
 } from '../../../../mock/providers.mock';
 
-jest.mock('@openchannel/angular-common-components', () => ({
+jest.mock('@mbd-common-libs/angular-common-components', () => ({
     ModalInviteUserModel: jest.fn().mockImplementation(() => MockModalInviteUserModel),
     OcInviteModalComponent: jest.fn().mockImplementation(() => MockOcInviteModalComponent),
 }));

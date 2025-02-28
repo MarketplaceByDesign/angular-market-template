@@ -5,7 +5,7 @@ import { MyAppsComponent } from './my-apps/my-apps.component';
 import { MyCompanyComponent } from './my-company/my-company.component';
 import { AuthGuard } from '@core/guards/auth.guard';
 import { siteConfig } from 'assets/data/siteConfig';
-import { PaymentsGateways } from '@openchannel/angular-common-services';
+import { PaymentsGateways } from '@mbd-common-libs/angular-common-services';
 
 const subPaths =
     siteConfig.paymentsEnabled && siteConfig.paymentsGateway === PaymentsGateways.STRIPE

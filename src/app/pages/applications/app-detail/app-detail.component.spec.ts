@@ -10,14 +10,14 @@ import {
     ReviewsService,
     SiteContentService,
     StatisticService,
-} from '@openchannel/angular-common-services';
+} from '@mbd-common-libs/angular-common-services';
 import { RouterTestingModule } from '@angular/router/testing';
 import { asyncScheduler, of, throwError } from 'rxjs';
 import { observeOn } from 'rxjs/operators';
 import { ActivatedRoute } from '@angular/router';
-import { Filter, OCReviewDetails, OverallRatingSummary } from '@openchannel/angular-common-components';
+import { Filter, OCReviewDetails, OverallRatingSummary } from '@mbd-common-libs/angular-common-components';
 import { Location } from '@angular/common';
-import { FullAppData } from '@openchannel/angular-common-components/src/lib/common-components';
+import { FullAppData } from '@mbd-common-libs/angular-common-components/src/lib/common-components';
 import { pageConfig } from '../../../../assets/data/configData';
 import {
     MockButtonActionComponent,

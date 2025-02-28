@@ -1,6 +1,6 @@
 import { ComponentFixture, fakeAsync, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AuthenticationService, SiteConfigService } from '@openchannel/angular-common-services';
+import { AuthenticationService, SiteConfigService } from '@mbd-common-libs/angular-common-services';
 import { AppComponent } from './app.component';
 
 import { CmsContentService } from '@core/services/cms-content-service/cms-content-service.service';

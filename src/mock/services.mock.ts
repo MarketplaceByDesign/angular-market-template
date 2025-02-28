@@ -1,8 +1,8 @@
 import { asyncScheduler, Observable, of, Subject } from 'rxjs';
-import { Page, SortResponse, Transaction, UserAccount } from '@openchannel/angular-common-services';
-import { Filter } from '@openchannel/angular-common-components';
+import { Page, SortResponse, Transaction, UserAccount } from '@mbd-common-libs/angular-common-services';
+import { Filter } from '@mbd-common-libs/angular-common-components';
 import { observeOn } from 'rxjs/operators';
-import { InviteUserModel } from '@openchannel/angular-common-services/lib/model/api/invite-user.model';
+import { InviteUserModel } from '@mbd-common-libs/angular-common-services/lib/model/api/invite-user.model';
 
 class MockPagination<T> {
     private values: T[];

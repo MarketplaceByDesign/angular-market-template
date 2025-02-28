@@ -14,7 +14,7 @@ import {
 import { MockRoutingComponent, MockSignupCustom } from '../../../../mock/components.mock';
 
 import { RouterTestingModule } from '@angular/router/testing';
-import { InviteUserService, NativeLoginService, UserAccountTypesService } from '@openchannel/angular-common-services';
+import { InviteUserService, NativeLoginService, UserAccountTypesService } from '@mbd-common-libs/angular-common-services';
 import { OcEditUserTypeService } from '@core/services/user-type-service/user-type.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';

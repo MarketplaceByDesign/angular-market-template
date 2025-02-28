@@ -2,7 +2,7 @@ import { ComponentFixture, fakeAsync, TestBed, tick, waitForAsync } from '@angul
 
 import { CompanyDetailsComponent } from './company-details.component';
 
-import { UserCompanyModel } from '@openchannel/angular-common-services';
+import { UserCompanyModel } from '@mbd-common-libs/angular-common-services';
 import { FormGroup } from '@angular/forms';
 import { of, throwError } from 'rxjs';
 import { By } from '@angular/platform-browser';
@@ -11,8 +11,8 @@ import { MockButtonComponent, MockFormComponent } from '../../../../../mock/comp
 import { MockPermissionDirective } from '../../../../../mock/directives.mock';
 import { mockLoadingBarService, mockToastrService, mockUserServiceProvider } from '../../../../../mock/providers.mock';
 
-jest.doMock('@openchannel/angular-common-services', () => ({
-    ...jest.requireActual('@openchannel/angular-common-services'),
+jest.doMock('@mbd-common-libs/angular-common-services', () => ({
+    ...jest.requireActual('@mbd-common-libs/angular-common-services'),
     TypeMapperUtils: MockTypeMapperUtils,
 }));
 

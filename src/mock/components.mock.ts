@@ -13,7 +13,7 @@ import {
     TransformTextType,
     UserGridSortOrder,
     UserSortChosen,
-} from '@openchannel/angular-common-components';
+} from '@mbd-common-libs/angular-common-components';
 import { AbstractControl, AbstractControlDirective, ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR, NgModel } from '@angular/forms';
 
 @Component({

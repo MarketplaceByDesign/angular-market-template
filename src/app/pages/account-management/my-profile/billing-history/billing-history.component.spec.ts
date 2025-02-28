@@ -2,7 +2,7 @@ import { ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testin
 
 import { BillingHistoryComponent } from './billing-history.component';
 
-import { Transaction } from '@openchannel/angular-common-services';
+import { Transaction } from '@mbd-common-libs/angular-common-services';
 import { of, throwError } from 'rxjs';
 import { TestScheduler } from 'rxjs/testing';
 import { By } from '@angular/platform-browser';

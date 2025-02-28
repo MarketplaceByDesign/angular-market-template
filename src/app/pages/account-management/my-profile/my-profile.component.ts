@@ -3,7 +3,7 @@ import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 import { Page } from 'app/pages/account-management/my-company/my-company.component';
 import { siteConfig } from 'assets/data/siteConfig';
-import { PaymentsGateways } from '@openchannel/angular-common-services';
+import { PaymentsGateways } from '@mbd-common-libs/angular-common-services';
 
 @Component({
     selector: 'app-my-profile',

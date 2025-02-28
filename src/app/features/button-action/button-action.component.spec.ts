@@ -9,15 +9,15 @@ import {
     FileUploadDownloadService,
     OwnershipService,
     StatisticService,
-} from '@openchannel/angular-common-services';
+} from '@mbd-common-libs/angular-common-services';
 import { ActivatedRoute, convertToParamMap, Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Location } from '@angular/common';
 import { buyNowButton, contactUsButton, downloadButton, installButton, uninstallButton } from '../../../assets/data/configData';
-import { FullAppData, OcConfirmationModalComponent } from '@openchannel/angular-common-components';
+import { FullAppData, OcConfirmationModalComponent } from '@mbd-common-libs/angular-common-components';
 import { asyncScheduler, Observable, throwError } from 'rxjs';
 import { observeOn } from 'rxjs/operators';
-import { AppFormModelResponse } from '@openchannel/angular-common-services/lib/model/api/app-form-model';
+import { AppFormModelResponse } from '@mbd-common-libs/angular-common-services/lib/model/api/app-form-model';
 import {
     mockAppFormService,
     mockAuthHolderService,

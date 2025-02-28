@@ -5,14 +5,14 @@ import {
     FileUploadDownloadService,
     OwnershipService,
     StatisticService,
-} from '@openchannel/angular-common-services';
+} from '@mbd-common-libs/angular-common-services';
 import { Observable, of, Subject, throwError } from 'rxjs';
 import { catchError, mergeMap, takeUntil, tap } from 'rxjs/operators';
 import { LoadingBarState } from '@ngx-loading-bar/core/loading-bar.state';
 import { LoadingBarService } from '@ngx-loading-bar/core';
 import { ToastrService } from 'ngx-toastr';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { FullAppData, OcButtonComponent, OcFormModalComponent, OcConfirmationModalComponent } from '@openchannel/angular-common-components';
+import { FullAppData, OcButtonComponent, OcFormModalComponent, OcConfirmationModalComponent } from '@mbd-common-libs/angular-common-components';
 import { ActivatedRoute, Router } from '@angular/router';
 import { get } from 'lodash';
 import { HttpHeaders } from '@angular/common/http';

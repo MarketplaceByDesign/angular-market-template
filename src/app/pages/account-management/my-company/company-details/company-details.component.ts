@@ -8,7 +8,7 @@ import {
     TypeModel,
     UserCompanyModel,
     UsersService,
-} from '@openchannel/angular-common-services';
+} from '@mbd-common-libs/angular-common-services';
 import { Subject, throwError } from 'rxjs';
 import { catchError, finalize, takeUntil } from 'rxjs/operators';
 import { ToastrService } from 'ngx-toastr';

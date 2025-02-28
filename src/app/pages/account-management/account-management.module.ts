@@ -16,7 +16,7 @@ import {
     OcManagementComponentsModule,
     OcAuthComponentsModule,
     OcPortalComponentsModule,
-} from '@openchannel/angular-common-components';
+} from '@mbd-common-libs/angular-common-components';
 import { BillingComponent } from './my-profile/billing/billing.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BillingHistoryComponent } from './my-profile/billing-history/billing-history.component';

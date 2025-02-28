@@ -1,4 +1,4 @@
-import { PrerenderEndpointsConfig } from '@openchannel/angular-common-services';
+import { PrerenderEndpointsConfig } from '@mbd-common-libs/angular-common-services';
 
 export const prerenderEndpoints: PrerenderEndpointsConfig = {
     excludeAPICall: ['/v2/stats/increment/'],

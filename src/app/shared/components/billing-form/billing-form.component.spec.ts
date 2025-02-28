@@ -19,7 +19,7 @@ import {
     mockToastrService,
     mockSvgIconRegistryService,
 } from '../../../../mock/providers.mock';
-import { CountryStateService, StripeService } from '@openchannel/angular-common-services';
+import { CountryStateService, StripeService } from '@mbd-common-libs/angular-common-services';
 import { ToastrService } from 'ngx-toastr';
 import { StripeLoaderService } from '@core/services/stripe-loader.service';
 

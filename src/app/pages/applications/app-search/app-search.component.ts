@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
-import { AppsService, FilterResponse, FrontendService, Page, TitleService } from '@openchannel/angular-common-services';
+import { AppsService, FilterResponse, FrontendService, Page, TitleService } from '@mbd-common-libs/angular-common-services';
 import { map, takeUntil, tap } from 'rxjs/operators';
 import { BehaviorSubject, combineLatest, Observable, Subject } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -16,7 +16,7 @@ import {
     OcSidebarSelectModel,
     SelectedFilter,
     SidebarValue,
-} from '@openchannel/angular-common-components';
+} from '@mbd-common-libs/angular-common-components';
 
 @Component({
     selector: 'app-app-search',

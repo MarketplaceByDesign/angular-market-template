@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { FileUploadDownloadService } from '@openchannel/angular-common-services';
+import { FileUploadDownloadService } from '@mbd-common-libs/angular-common-services';
 import { Observable } from 'rxjs';
 import { HttpResponse, HttpUploadProgressEvent } from '@angular/common/http';
-import { FileUploaderService, FileDetails } from '@openchannel/angular-common-components';
+import { FileUploaderService, FileDetails } from '@mbd-common-libs/angular-common-components';
 
 @Injectable()
 export class FileService extends FileUploaderService {

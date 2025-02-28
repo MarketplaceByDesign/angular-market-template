@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { AuthHolderService, NativeLoginService } from '@openchannel/angular-common-services';
+import { AuthHolderService, NativeLoginService } from '@mbd-common-libs/angular-common-services';
 import { Subject } from 'rxjs';
 import { ToastrService } from 'ngx-toastr';
 import { FormGroup, Validators } from '@angular/forms';

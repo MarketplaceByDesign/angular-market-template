@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { CmsContentService } from '@core/services/cms-content-service/cms-content-service.service';
 import { RouterTestingModule } from '@angular/router/testing';
-import { FullAppData } from '@openchannel/angular-common-components/src/lib/common-components';
+import { FullAppData } from '@mbd-common-libs/angular-common-components/src/lib/common-components';
 import { pageConfig } from '../../assets/data/configData';
 import { By } from '@angular/platform-browser';
 import { of, throwError } from 'rxjs';

@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthenticationService, SiteConfigService } from '@openchannel/angular-common-services';
+import { AuthenticationService, SiteConfigService } from '@mbd-common-libs/angular-common-services';
 import { first, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { LoadingBarState } from '@ngx-loading-bar/core/loading-bar.state';

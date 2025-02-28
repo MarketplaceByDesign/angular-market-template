@@ -2,8 +2,8 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ManagementComponent } from './management.component';
 import { Observable, of, throwError } from 'rxjs';
-import { UserAccount } from '@openchannel/angular-common-services';
-import { InviteUserModel } from '@openchannel/angular-common-services/lib/model/api/invite-user.model';
+import { UserAccount } from '@mbd-common-libs/angular-common-services';
+import { InviteUserModel } from '@mbd-common-libs/angular-common-services/lib/model/api/invite-user.model';
 import { times } from 'lodash';
 import {
     mockInviteUserAccountServiceProvider,

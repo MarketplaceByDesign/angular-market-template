@@ -8,7 +8,7 @@ import {
     OcCommonServiceModule,
     NetlifyPrerenderModule,
     AuthHolderService,
-} from '@openchannel/angular-common-services';
+} from '@mbd-common-libs/angular-common-services';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { OAuthModule } from 'angular-oauth2-oidc';
@@ -20,15 +20,15 @@ import { HomeComponent } from './home/home.component';
 import { HttpErrorInterceptor } from '@core/interceptors/httperror.interceptor';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { OcAppCategoriesModule, FileUploaderService } from '@openchannel/angular-common-components';
+import { OcAppCategoriesModule, FileUploaderService } from '@mbd-common-libs/angular-common-components';
 import { FileService } from '@core/services/file.service';
 import { OcAppsSearchService } from '@core/services/oc-apps-search.service';
-import { AppsSearchService } from '@openchannel/angular-common-components/src/lib/form-components';
+import { AppsSearchService } from '@mbd-common-libs/angular-common-components/src/lib/form-components';
 import { prerenderEndpoints } from '../assets/data/prerenderEndpoints';
 import {
     AbstractErrorMessageConfiguration,
     DefaultErrorMessageConfiguration,
-} from '@openchannel/angular-common-components/src/lib/common-components';
+} from '@mbd-common-libs/angular-common-components/src/lib/common-components';
 
 const apiURl = environment.enableProxy ? `${window.origin}/client-api/` : environment.apiUrl;
 

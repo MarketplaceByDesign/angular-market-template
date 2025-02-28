@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonActionComponent } from './button-action.component';
 import { ButtonActionService } from './button-action.service';
-import { OcCommonLibModule } from '@openchannel/angular-common-components';
+import { OcCommonLibModule } from '@mbd-common-libs/angular-common-components';
 
 @NgModule({
     declarations: [ButtonActionComponent],

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { MetaTagsPageConfig, OCMetaTagService } from '@openchannel/angular-common-services';
+import { MetaTagsPageConfig, OCMetaTagService } from '@mbd-common-libs/angular-common-services';
 import { Meta } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { metaTags } from 'assets/data/siteConfig';

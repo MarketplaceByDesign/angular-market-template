@@ -16,7 +16,7 @@ import { By } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { throwError } from 'rxjs';
 import { MockFrontendService } from '../../../../mock/services.mock';
-import { AppsService } from '@openchannel/angular-common-services';
+import { AppsService } from '@mbd-common-libs/angular-common-services';
 
 describe('AppSearchComponent', () => {
     let component: AppSearchComponent;

@@ -1,9 +1,9 @@
 import { Component, OnDestroy } from '@angular/core';
-import { NativeLoginService } from '@openchannel/angular-common-services';
+import { NativeLoginService } from '@mbd-common-libs/angular-common-services';
 import { takeUntil } from 'rxjs/operators';
 import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
-import { ComponentsUserActivationModel } from '@openchannel/angular-common-components';
+import { ComponentsUserActivationModel } from '@mbd-common-libs/angular-common-components';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({

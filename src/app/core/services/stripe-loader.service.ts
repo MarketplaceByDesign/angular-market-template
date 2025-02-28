@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { GetMarketplaceStripeSettingsResponse, StripeService } from '@openchannel/angular-common-services';
+import { GetMarketplaceStripeSettingsResponse, StripeService } from '@mbd-common-libs/angular-common-services';
 import { loadStripe, Stripe } from '@stripe/stripe-js';
 import { from, Observable } from 'rxjs';
 import { mergeMap, shareReplay } from 'rxjs/operators';
