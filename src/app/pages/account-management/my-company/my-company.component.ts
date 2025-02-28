@@ -10,8 +10,8 @@ import {
     PermissionType,
     UserRoleService,
     UsersService,
-} from '@openchannel/angular-common-services';
-import { ModalInviteUserModel, OcInviteModalComponent } from '@openchannel/angular-common-components';
+} from '@mbd-common-libs/angular-common-services';
+import { ModalInviteUserModel, OcInviteModalComponent } from '@mbd-common-libs/angular-common-components';
 import { ManagementComponent } from './management/management.component';
 import { Location } from '@angular/common';
 import { map, takeUntil } from 'rxjs/operators';

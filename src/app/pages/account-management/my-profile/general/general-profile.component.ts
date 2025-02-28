@@ -1,12 +1,12 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { UserAccountService } from '@openchannel/angular-common-services';
+import { UserAccountService } from '@mbd-common-libs/angular-common-services';
 import { Subject } from 'rxjs';
 import { finalize, takeUntil } from 'rxjs/operators';
 import { ToastrService } from 'ngx-toastr';
 import { LoadingBarState } from '@ngx-loading-bar/core/loading-bar.state';
 import { LoadingBarService } from '@ngx-loading-bar/core';
 import { FormGroup } from '@angular/forms';
-import { OCOrganization, OcEditUserFormConfig, OcEditUserResult } from '@openchannel/angular-common-components';
+import { OCOrganization, OcEditUserFormConfig, OcEditUserResult } from '@mbd-common-libs/angular-common-components';
 import { forkJoin } from 'rxjs/internal/observable/forkJoin';
 import { OcEditUserTypeService } from '@core/services/user-type-service/user-type.service';
 

@@ -1,4 +1,4 @@
-import { MetaTagsPageConfig, PaymentsGateways, SiteConfig } from '@openchannel/angular-common-services';
+import { MetaTagsPageConfig, PaymentsGateways, SiteConfig } from '@mbd-common-libs/angular-common-services';
 
 export const metaTags: MetaTagsPageConfig = {
     defaultMetaTags: [

@@ -7,12 +7,12 @@ import {
     NativeLoginService,
     UserAccountTypeModel,
     UserAccountTypesService,
-} from '@openchannel/angular-common-services';
+} from '@mbd-common-libs/angular-common-services';
 import { Subject } from 'rxjs';
 import { merge } from 'lodash';
 import { LogOutService } from '@core/services/logout-service/log-out.service';
 import { filter, finalize, map, takeUntil } from 'rxjs/operators';
-import { AppFormField, OcEditUserFormConfig, OcEditUserResult } from '@openchannel/angular-common-components';
+import { AppFormField, OcEditUserFormConfig, OcEditUserResult } from '@mbd-common-libs/angular-common-components';
 import { OcEditUserTypeService } from '@core/services/user-type-service/user-type.service';
 import { LoadingBarService } from '@ngx-loading-bar/core';
 import { LoadingBarState } from '@ngx-loading-bar/core/loading-bar.state';

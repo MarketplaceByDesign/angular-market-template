@@ -1,10 +1,10 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { NativeLoginService } from '@openchannel/angular-common-services';
+import { NativeLoginService } from '@mbd-common-libs/angular-common-services';
 import { Subject } from 'rxjs';
 import { finalize, takeUntil } from 'rxjs/operators';
 import { LoadingBarState } from '@ngx-loading-bar/core/loading-bar.state';
 import { LoadingBarService } from '@ngx-loading-bar/core';
-import { OcEditUserFormConfig, OcEditUserResult, SignupRouterState } from '@openchannel/angular-common-components';
+import { OcEditUserFormConfig, OcEditUserResult, SignupRouterState } from '@mbd-common-libs/angular-common-components';
 import { OcEditUserTypeService } from '@core/services/user-type-service/user-type.service';
 import { Router } from '@angular/router';
 

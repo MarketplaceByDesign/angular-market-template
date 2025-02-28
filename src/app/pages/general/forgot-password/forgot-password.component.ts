@@ -1,8 +1,8 @@
 import { Component, OnDestroy } from '@angular/core';
-import { NativeLoginService } from '@openchannel/angular-common-services';
+import { NativeLoginService } from '@mbd-common-libs/angular-common-services';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { ComponentsUserRegistrationModel } from '@openchannel/angular-common-components';
+import { ComponentsUserRegistrationModel } from '@mbd-common-libs/angular-common-components';
 
 @Component({
     selector: 'app-forgot-password',

@@ -1,7 +1,7 @@
 import { ComponentFixture, fakeAsync, TestBed, tick, waitForAsync } from '@angular/core/testing';
 
 import { GeneralProfileComponent } from './general-profile.component';
-import { UserAccount } from '@openchannel/angular-common-services';
+import { UserAccount } from '@mbd-common-libs/angular-common-services';
 import { throwError } from 'rxjs';
 import { FormGroup } from '@angular/forms';
 import { By } from '@angular/platform-browser';

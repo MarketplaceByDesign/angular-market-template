@@ -10,13 +10,13 @@ import {
     UserGridActionModel,
     UserRoleService,
     UsersGridParametersModel,
-} from '@openchannel/angular-common-services';
+} from '@mbd-common-libs/angular-common-services';
 import { Observable, of, Subject } from 'rxjs';
 import { ToastrService } from 'ngx-toastr';
 import { LoadingBarState } from '@ngx-loading-bar/core/loading-bar.state';
 import { LoadingBarService } from '@ngx-loading-bar/core';
 import {mergeMap, map, takeUntil, tap, switchMap} from 'rxjs/operators';
-import { SortField, UserGridSortOrder, UserSortChosen } from '@openchannel/angular-common-components/src/lib/management-components';
+import { SortField, UserGridSortOrder, UserSortChosen } from '@mbd-common-libs/angular-common-components/src/lib/management-components';
 import { ManagementModalService } from './management-modal.service';
 
 @Component({

@@ -2,7 +2,7 @@ import { ComponentFixture, fakeAsync, TestBed, tick, waitForAsync } from '@angul
 
 import { LoginComponent } from './login.component';
 import { RouterTestingModule } from '@angular/router/testing';
-import { SiteAuthConfig } from '@openchannel/angular-common-services';
+import { SiteAuthConfig } from '@mbd-common-libs/angular-common-services';
 import { Location } from '@angular/common';
 import { of, throwError } from 'rxjs';
 import { By } from '@angular/platform-browser';
@@ -18,8 +18,8 @@ import {
     mockToastrService,
 } from '../../../../mock/providers.mock';
 
-jest.doMock('@openchannel/angular-common-services', () => ({
-    ...jest.requireActual('@openchannel/angular-common-services'),
+jest.doMock('@mbd-common-libs/angular-common-services', () => ({
+    ...jest.requireActual('@mbd-common-libs/angular-common-services'),
     LoginRequest: MockLoginRequest,
 }));
 

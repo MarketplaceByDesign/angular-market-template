@@ -45,12 +45,12 @@ npm install -g @angular/cli
 npm install
 ```
 
-2. Optional. Dependency with @openchannel/angular-common-services.
+2. Optional. Dependency with @mbd-common-libs/angular-common-services.
 ```
 npm install file:<absolute path to common service project dist/angular-common-services>
 ```
 
-3. Optional. Dependency with @openchannel/angular-common-components.
+3. Optional. Dependency with @mbd-common-libs/angular-common-components.
 ```
 npm install file:<absolute path to common component project dist/angular-common-components>
 ```

@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { AppsService, AppResponse, Page } from '@openchannel/angular-common-services';
+import { AppsService, AppResponse, Page } from '@mbd-common-libs/angular-common-services';
 import { Observable } from 'rxjs';
-import { FullAppData } from '@openchannel/angular-common-components/src/lib/common-components';
-import { AppsSearchService } from '@openchannel/angular-common-components/src/lib/form-components';
+import { FullAppData } from '@mbd-common-libs/angular-common-components/src/lib/common-components';
+import { AppsSearchService } from '@mbd-common-libs/angular-common-components/src/lib/form-components';
 import { map } from 'rxjs/operators';
 
 @Injectable()

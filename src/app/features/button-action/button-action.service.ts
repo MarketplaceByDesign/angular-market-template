@@ -1,6 +1,6 @@
 import { ActionButton, ButtonType, buyNowButton, DownloadButtonType } from 'assets/data/configData';
 import { get } from 'lodash';
-import { AppResponse } from '@openchannel/angular-common-services';
+import { AppResponse } from '@mbd-common-libs/angular-common-services';
 
 export class ButtonActionService {
     readonly hideButtonsWithoutOwnership: ButtonType[] = ['install', 'download'];

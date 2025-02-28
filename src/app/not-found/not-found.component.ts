@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PrerenderRequestsWatcherService } from '@openchannel/angular-common-services';
+import { PrerenderRequestsWatcherService } from '@mbd-common-libs/angular-common-services';
 
 @Component({
     selector: 'app-not-found',

@@ -10,7 +10,7 @@ import {
     mockStripeService,
     mockToastrService,
 } from '../../../../mock/providers.mock';
-import { Purchase, StripeService, UserAccount, UserAccountService } from '@openchannel/angular-common-services';
+import { Purchase, StripeService, UserAccount, UserAccountService } from '@mbd-common-libs/angular-common-services';
 import { MockAppsService, MockUserRoleService } from '../../../../mock/services.mock';
 import { times } from 'lodash';
 import { MockAppBillingForm, MockButtonComponent, MockOcConsentComponent, MockPageTitleComponent } from '../../../../mock/components.mock';
@@ -18,7 +18,7 @@ import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { RouterTestingModule } from '@angular/router/testing';
 import { By } from '@angular/platform-browser';
-import { FullAppData } from '@openchannel/angular-common-components/src/lib/common-components';
+import { FullAppData } from '@mbd-common-libs/angular-common-components/src/lib/common-components';
 import { pageConfig } from '../../../../assets/data/configData';
 import { of, throwError } from 'rxjs';
 import { ToastrService } from 'ngx-toastr';

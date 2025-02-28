@@ -23,8 +23,8 @@ import {
     UsersService,
     CountryStateService,
     AppVersionService,
-} from '@openchannel/angular-common-services';
-import { InviteUserModel } from '@openchannel/angular-common-services/lib/model/api/invite-user.model';
+} from '@mbd-common-libs/angular-common-services';
+import { InviteUserModel } from '@mbd-common-libs/angular-common-services/lib/model/api/invite-user.model';
 import { ToastrService } from 'ngx-toastr';
 import {
     MockAppFormService,

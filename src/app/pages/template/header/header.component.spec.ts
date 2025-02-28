@@ -4,7 +4,7 @@ import { HeaderComponent } from './header.component';
 import { CmsContentService } from '@core/services/cms-content-service/cms-content-service.service';
 import { of } from 'rxjs';
 import { Router } from '@angular/router';
-import { AuthHolderService } from '@openchannel/angular-common-services';
+import { AuthHolderService } from '@mbd-common-libs/angular-common-services';
 import { LogOutService } from '@core/services/logout-service/log-out.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Location } from '@angular/common';

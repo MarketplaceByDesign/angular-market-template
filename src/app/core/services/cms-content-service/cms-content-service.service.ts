@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CMSSiteContentService, SiteContentService } from '@openchannel/angular-common-services';
+import { CMSSiteContentService, SiteContentService } from '@mbd-common-libs/angular-common-services';
 import { Observable } from 'rxjs/internal/Observable';
 import { map } from 'rxjs/operators';
 import { environment } from '../../../../environments/environment';

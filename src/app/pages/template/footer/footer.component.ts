@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SocialLink } from '@openchannel/angular-common-components';
+import { SocialLink } from '@mbd-common-libs/angular-common-components';
 import { CmsContentService } from '@core/services/cms-content-service/cms-content-service.service';
 
 interface FooterColumn {

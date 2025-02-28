@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { OcEditUserFormConfig } from '@openchannel/angular-common-components';
+import { OcEditUserFormConfig } from '@mbd-common-libs/angular-common-components';
 import {
     Page,
     TypeFieldModel,
@@ -9,7 +9,7 @@ import {
     UserAccountTypeModel,
     UserAccountTypesService,
     UsersService,
-} from '@openchannel/angular-common-services';
+} from '@mbd-common-libs/angular-common-services';
 import { forkJoin } from 'rxjs/internal/observable/forkJoin';
 import { map, tap } from 'rxjs/operators';
 import { cloneDeep, keyBy } from 'lodash';

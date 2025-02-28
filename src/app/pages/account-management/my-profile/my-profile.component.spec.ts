@@ -4,7 +4,7 @@ import { MyProfileComponent } from './my-profile.component';
 import { By } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Router } from '@angular/router';
-import { PaymentsGateways } from '@openchannel/angular-common-services';
+import { PaymentsGateways } from '@mbd-common-libs/angular-common-services';
 import {
     MockBillingComponent,
     MockBillingHistoryComponent,

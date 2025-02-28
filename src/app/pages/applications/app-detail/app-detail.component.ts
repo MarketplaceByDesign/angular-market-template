@@ -9,7 +9,7 @@ import {
     StatisticService,
     SiteContentService,
     AuthHolderService,
-} from '@openchannel/angular-common-services';
+} from '@mbd-common-libs/angular-common-services';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Subject, Observable, throwError, of } from 'rxjs';
 import { catchError, filter, map, mergeMap, takeUntil, tap } from 'rxjs/operators';
@@ -24,7 +24,7 @@ import {
     Review,
     ReviewListOptionType,
     Filter,
-} from '@openchannel/angular-common-components';
+} from '@mbd-common-libs/angular-common-components';
 import { HttpHeaders } from '@angular/common/http';
 import { Location } from '@angular/common';
 import { MarketMetaTagService } from '@core/services/meta-tag-service/meta-tag-service.service';

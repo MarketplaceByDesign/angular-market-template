@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule, DecimalPipe } from '@angular/common';
-import { OcCommonLibModule, OcMarketComponentsModule } from '@openchannel/angular-common-components';
+import { OcCommonLibModule, OcMarketComponentsModule } from '@mbd-common-libs/angular-common-components';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgSelectModule } from '@ng-select/ng-select';

@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpErrorResponse, HttpEvent, HttpHandler, HttpHeaders, HttpInterceptor, HttpRequest } from '@angular/common/http';
 import { MonoTypeOperatorFunction, Observable, Subject, throwError, timer } from 'rxjs';
 import { Router } from '@angular/router';
-import { OcErrorService } from '@openchannel/angular-common-components';
+import { OcErrorService } from '@mbd-common-libs/angular-common-components';
 import { catchError, mergeMap, retryWhen, switchMap, take } from 'rxjs/operators';
-import { AuthenticationService, AuthHolderService, LoginResponse } from '@openchannel/angular-common-services';
+import { AuthenticationService, AuthHolderService, LoginResponse } from '@mbd-common-libs/angular-common-services';
 import { ToastrService } from 'ngx-toastr';
 import { HttpConfigInterceptor } from './httpconfig.interceptor';
 import isbot from 'isbot';
@@ -24,7 +24,7 @@ export class HttpErrorInterceptor implements HttpInterceptor {
     ) {}
 
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-        const errorHeader = request.headers.get('x-handle-error');
+        const errorHeader = request?.headers?.get('x-handle-error');
         const notHandledErrors = errorHeader ? errorHeader.split(',').map(Number) : [];
 
         return next

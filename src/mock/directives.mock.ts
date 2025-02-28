@@ -1,5 +1,5 @@
 import { Directive, EventEmitter, Input, Output } from '@angular/core';
-import { Permission } from '@openchannel/angular-common-services';
+import { Permission } from '@mbd-common-libs/angular-common-services';
 
 @Directive({
     selector: 'infiniteScroll',

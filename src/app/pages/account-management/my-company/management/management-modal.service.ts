@@ -3,13 +3,13 @@ import {
     UserAccount,
     UserAccountService,
     UserRoleService
-} from '@openchannel/angular-common-services';
+} from '@mbd-common-libs/angular-common-services';
 import { from, Observable, of } from 'rxjs';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { OcConfirmationModalComponent } from '@openchannel/angular-common-components/src/lib/common-components';
+import { OcConfirmationModalComponent } from '@mbd-common-libs/angular-common-components/src/lib/common-components';
 import { catchError, filter} from 'rxjs/operators';
 import { cloneDeep } from 'lodash';
-import { OcInviteModalComponent, ModalUpdateUserModel } from '@openchannel/angular-common-components/src/lib/management-components';
+import { OcInviteModalComponent, ModalUpdateUserModel } from '@mbd-common-libs/angular-common-components/src/lib/management-components';
 import { Injectable } from '@angular/core';
 
 @Injectable({

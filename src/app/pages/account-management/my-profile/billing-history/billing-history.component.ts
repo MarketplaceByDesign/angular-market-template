@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { AppListing } from '@openchannel/angular-common-components';
+import { AppListing } from '@mbd-common-libs/angular-common-components';
 import {
     AppsService,
     Transaction,
@@ -7,7 +7,7 @@ import {
     FullTransaction,
     TransactionOptions,
     TransactionStatus,
-} from '@openchannel/angular-common-services';
+} from '@mbd-common-libs/angular-common-services';
 import { catchError, map, mergeMap, takeUntil } from 'rxjs/operators';
 import { Observable, Subject, throwError } from 'rxjs';
 import { LoadingBarService } from '@ngx-loading-bar/core';

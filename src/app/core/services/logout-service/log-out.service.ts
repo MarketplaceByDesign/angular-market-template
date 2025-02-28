@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { OAuthService } from 'angular-oauth2-oidc';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AuthenticationService, AuthHolderService, SiteAuthConfig } from '@openchannel/angular-common-services';
+import { AuthenticationService, AuthHolderService, SiteAuthConfig } from '@mbd-common-libs/angular-common-services';
 import { from, Observable, of } from 'rxjs';
 import { filter, first, map, mergeMap, skip, switchMap, tap } from 'rxjs/operators';
 

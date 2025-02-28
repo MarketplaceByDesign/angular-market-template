@@ -1,7 +1,7 @@
 import { ComponentFixture, fakeAsync, TestBed, tick, waitForAsync } from '@angular/core/testing';
 
 import { NotFoundComponent } from './not-found.component';
-import { PrerenderRequestsWatcherService } from '@openchannel/angular-common-services';
+import { PrerenderRequestsWatcherService } from '@mbd-common-libs/angular-common-services';
 import { By } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Router } from '@angular/router';

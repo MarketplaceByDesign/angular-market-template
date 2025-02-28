@@ -9,13 +9,13 @@ import {
     StripeService,
     UserAccount,
     UserAccountService,
-} from '@openchannel/angular-common-services';
+} from '@mbd-common-libs/angular-common-services';
 import { ActivatedRoute, Router } from '@angular/router';
 import { LoadingBarState } from '@ngx-loading-bar/core/loading-bar.state';
 import { LoadingBarService } from '@ngx-loading-bar/core';
 import { Subject } from 'rxjs';
 import { map, takeUntil } from 'rxjs/operators';
-import { FullAppData } from '@openchannel/angular-common-components';
+import { FullAppData } from '@mbd-common-libs/angular-common-components';
 import { pageConfig } from 'assets/data/configData';
 import { ToastrService } from 'ngx-toastr';
 import { HttpHeaders } from '@angular/common/http';

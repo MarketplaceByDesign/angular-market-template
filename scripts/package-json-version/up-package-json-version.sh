@@ -1,6 +1,6 @@
 #!/bin/bash
 # 1. Update package.json version.
-# 2. Update @openchannel/angular-common-components and @openchannel/angular-common-services version.
+# 2. Update @mbd-common-libs/angular-common-components and @mbd-common-libs/angular-common-services version.
 # 3. Commit and push changes.
 
 PROJECT_VERSION=$1
@@ -44,9 +44,9 @@ then
 elif ([[ $SERVICES_AND_COMPONENTS_VERSION == +([0-9]).+([0-9]).+([0-9]) ]] || [[ $SERVICES_AND_COMPONENTS_VERSION == +([0-9]).+([0-9]).+([0-9])-+([0-9]) ]])
 then
   echo "Updating 'angular-common-components' and 'angular-common-services' version to $SERVICES_AND_COMPONENTS_VERSION version."
-  npm i "@openchannel/angular-common-services@$SERVICES_AND_COMPONENTS_VERSION"
+  npm i @mbd-common-libs/angular-common-services@$SERVICES_AND_COMPONENTS_VERSION"
   whenError "Can't up service version to $SERVICES_AND_COMPONENTS_VERSION"
-  npm i "@openchannel/angular-common-components@$SERVICES_AND_COMPONENTS_VERSION"
+  npm i @mbd-common-libs/angular-common-components@$SERVICES_AND_COMPONENTS_VERSION"
   echo "Up (components) version to $SERVICES_AND_COMPONENTS_VERSION"
   whenError "Can't up components version. to $SERVICES_AND_COMPONENTS_VERSION"
   commitMessage+=" Up libs version to $SERVICES_AND_COMPONENTS_VERSION."

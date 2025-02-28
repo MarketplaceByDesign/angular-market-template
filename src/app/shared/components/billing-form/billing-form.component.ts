@@ -12,14 +12,14 @@ import {
     StatesModel,
     StripeService,
     UserCreditCardsResponse,
-} from '@openchannel/angular-common-services';
+} from '@mbd-common-libs/angular-common-services';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { of, Subject } from 'rxjs';
 import { StripeLoaderService } from '@core/services/stripe-loader.service';
 import { ToastrService } from 'ngx-toastr';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { catchError, finalize, switchMap, takeUntil, tap } from 'rxjs/operators';
-import { OcConfirmationModalComponent } from '@openchannel/angular-common-components';
+import { OcConfirmationModalComponent } from '@mbd-common-libs/angular-common-components';
 import { forkJoin } from 'rxjs/internal/observable/forkJoin';
 import { HttpHeaders } from '@angular/common/http';
 
