@@ -46,7 +46,9 @@
     "rxjs": "~6.6.3",
     "tinymce": "^5.9.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "node-fetch": "^3.2.10",
+    "node-fetch-npm": "^2.0.4"
   },
   "devDependencies": {
     "@angular-builders/jest": "^13.0.2",
