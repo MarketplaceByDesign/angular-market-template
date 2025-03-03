@@ -1,7 +1,7 @@
 import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { AuthHolderService } from '@mbd-common-libs/angular-common-services';
-import { env } from 'process';
+import { environment } from 'environments/environment';
 
 export class HttpConfigInterceptor implements HttpInterceptor {
     
@@ -19,7 +19,7 @@ export class HttpConfigInterceptor implements HttpInterceptor {
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         request = request.clone({
             setHeaders: {
-                'X-Site-Key': 'fyhafvjhCkVMT672pBemQBl7FiE3j0MxmlHDvLr34Ro',
+                'X-Site-Key': environment.siteKey,
             }
         });
         
