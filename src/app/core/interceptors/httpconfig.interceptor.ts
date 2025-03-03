@@ -19,10 +19,10 @@ export class HttpConfigInterceptor implements HttpInterceptor {
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         request = request.clone({
             setHeaders: {
-                'X-Site-Key': env.SITE_KEY,
+                'X-Site-Key': 'fyhafvjhCkVMT672pBemQBl7FiE3j0MxmlHDvLr34Ro',
             }
         });
-
+        
         if (this.authHolderService.accessToken && request.url.startsWith(this.apiURL)) {
             request = HttpConfigInterceptor.addToken(request, this.authHolderService.accessToken);
         }
