@@ -38,6 +38,8 @@ export class HttpErrorInterceptor implements HttpInterceptor {
                 catchError((response: HttpErrorResponse) => {
                     if (response instanceof HttpErrorResponse && response.status === 401 && !response.url.includes('refresh')) {
                         return this.handle401Error(request, next);
+                    }else if (response instanceof HttpErrorResponse && response.status === 403) {
+                        this.handleError(response);
                     } else if (response.error && response.error['validation-errors']) {
                         this.handleValidationError(response.error['validation-errors']);
                     } else if (response?.error?.errors?.length >= 1 && response?.error?.errors[0]?.field) {
