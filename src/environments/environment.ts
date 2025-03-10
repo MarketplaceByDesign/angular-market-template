@@ -8,7 +8,7 @@ export const environment = {
     marketplaceName: 'OpenChannel',
     enableProxy: false,
     enableCMS: true,
-    siteKey: "XNUW-NecPZJVHp5270p6KFKBoLUJU4RoLmWVvY4LZoE"
+    siteKey: "8-Ms59CssdtLX0CfodmPZEcOqjPjF_OLd-4CI8DhoDk"
 };
 
 /*
