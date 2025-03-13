@@ -5,7 +5,7 @@
 export const environment = {
     production: false,
     apiUrl: 'https://us-east-2-prod-capapi.marketplacebydesign.net/',
-    marketplaceName: 'OpenChannel',
+    marketplaceName: 'Marketplace by Design',
     enableProxy: false,
     enableCMS: true,
     siteKey: "8-Ms59CssdtLX0CfodmPZEcOqjPjF_OLd-4CI8DhoDk"
