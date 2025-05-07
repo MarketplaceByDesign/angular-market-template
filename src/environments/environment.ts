@@ -4,7 +4,7 @@
 
 export const environment = {
     production: false,
-    apiUrl: 'https://us-east-2-prod-capapi.marketplacebydesign.net/',
+    apiUrl: 'https://us-west-2-dev-capapi.marketplacebydesign.net/',
     marketplaceName: 'Marketplace by Design',
     enableProxy: false,
     enableCMS: true,
