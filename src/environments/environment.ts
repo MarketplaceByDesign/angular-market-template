@@ -8,7 +8,7 @@ export const environment = {
     marketplaceName: 'Marketplace by Design',
     enableProxy: false,
     enableCMS: true,
-    siteKey: "91vGf4TrGnVT66sTGdZb7svQHIRNbf-tONPIblEo0nQ"
+    siteKey: "8_7cFYPvI7NP5ABh8UNT8scNCkLg9O-BudEOwGc_lmI"
 };
 
 /*
