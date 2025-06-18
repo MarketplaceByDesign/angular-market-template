@@ -17,11 +17,11 @@ export class HttpConfigInterceptor implements HttpInterceptor {
     }
 
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-        request = request.clone({
-            setHeaders: {
-                'X-Site-Key': environment.siteKey,
-            }
-        });
+        // request = request.clone({
+        //     setHeaders: {
+        //         'X-Site-Key': environment.siteKey,
+        //     }
+        // });
         
         if (this.authHolderService.accessToken && request.url.startsWith(this.apiURL)) {
             request = HttpConfigInterceptor.addToken(request, this.authHolderService.accessToken);
